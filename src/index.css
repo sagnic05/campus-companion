@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* --- The Animated Background Engine --- */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Default Light Theme (Premium Corporate Blue/Purple) */
+:root {
+  --bg-gradient: linear-gradient(-45deg, #e0c3fc, #8ec5fc, #f0f4f8, #d4e4fc);
+  --text-main: #2d3748;
+  --text-header: #1a202c;
+  --glass-bg: rgba(255, 255, 255, 0.25);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-shadow: rgba(31, 38, 135, 0.1);
+  --glass-inner-glow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+/* Night-Owl Dark Mode (Sleek Midnight) */
+[data-theme='dark'] {
+  --bg-gradient: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #12151f);
+  --text-main: #e2e8f0;
+  --text-header: #ffffff;
+  --glass-bg: rgba(17, 25, 40, 0.35);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: rgba(0, 0, 0, 0.4);
+  --glass-inner-glow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-gradient);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite; /* Starts the slow background breathing */
+  min-height: 100vh;
+  color: var(--text-main);
+  transition: color 0.5s ease;
+}
+
+/* --- Ultra-Premium Frosted Glass Panels --- */
+div[style*="max-width"], form, .glass-panel {
+  background: var(--glass-bg) !important;
+  /* Saturation makes the background colors pop through the blur */
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  border-radius: 20px !important;
+  border: 1px solid var(--glass-border) !important;
+  /* Combines an outer drop shadow with an inner edge highlight for 3D depth */
+  box-shadow: var(--glass-inner-glow), 0 8px 32px 0 var(--glass-shadow) !important;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+h1, h2 { 
+  color: var(--text-header); 
+  transition: color 0.5s ease;
+}
+
+/* --- Professional Button Animations --- */
+button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border-radius: 8px !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-3px) scale(1.02) !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+  filter: brightness(1.15);
+}
+
+/* --- Clean Input Fields --- */
+input, select {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255,255,255,0.5) !important;
+  background: rgba(255,255,255,0.7) !important;
+  color: #1a202c !important;
+  transition: all 0.3s ease !important;
+}
+
+input:focus, select:focus {
+  outline: none !important;
+  border-color: #8ec5fc !important;
+  background: #ffffff !important;
+  box-shadow: 0 0 0 3px rgba(142, 197, 252, 0.3) !important;
+}
+
+[data-theme='dark'] input, [data-theme='dark'] select {
+  background: rgba(0,0,0,0.3) !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  color: #e2e8f0 !important;
+}
+
+[data-theme='dark'] input:focus {
+  background: rgba(0,0,0,0.5) !important;
+  border-color: #4fd1c5 !important;
+  box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.2) !important;
+}
+/* --- Premium Scrollbars & Selection --- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+::selection {
+  background: rgba(142, 197, 252, 0.6); /* Soft blue highlight */
+  color: var(--text-header);
+}
+
+/* --- Smooth Data Entry Animations --- */
+@keyframes slideUpFade {
+  from { 
+    opacity: 0; 
+    transform: translateY(15px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.animated-list-item {
+  animation: slideUpFade 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+  /* Adds a subtle inner border to individual class cards */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
