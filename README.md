@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://via.placeholder.com/800x400?text=Campus+Companion" alt="Campus Companion Banner" width="100%" />
+<img src="banner.jpg" alt="Campus Companion Banner" width="100%" />
 
   <h1>🎓 Campus Companion</h1>
   <p><strong>A premium, cross-platform student dashboard for managing schedules, classes, and campus life.</strong></p>
