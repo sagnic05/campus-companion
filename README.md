@@ -1,16 +1,45 @@
-# React + Vite
+<div align="center">
+  <img src="https://via.placeholder.com/800x400?text=Campus+Companion" alt="Campus Companion Banner" width="100%" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <h1>🎓 Campus Companion</h1>
+  <p><strong>A premium, cross-platform student dashboard for managing schedules, classes, and campus life.</strong></p>
 
-Currently, two official plugins are available:
+  <a href="YOUR_VERCEL_LINK_HERE"><strong>View Live Web App</strong></a> · 
+  <a href="#installation"><strong>Download Android APK</strong></a>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<br />
 
-## React Compiler
+## 🚀 About The Project
+Campus Companion is a modern application designed to streamline the college experience, originally built with the students of Hooghly Engineering and Technology College in mind. 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+It provides a seamless, secure, and visually stunning interface for students to organize their semester, track courses, and manage their daily academic schedules. Built with a responsive web-first approach, the application is also completely wrapped and optimized for native Android deployment.
 
-## Expanding the ESLint configuration
+### ✨ Key Features
+* **Cross-Platform Accessibility:** Fully responsive web application hosted on Vercel, with a native Android `.apk` built via Capacitor.
+* **Smart Scheduling:** Interactive class scheduling system (featuring automatic smart-emojis for subjects like DSA and Math).
+* **Secure Authentication:** Complete backend user login and database management powered by Supabase.
+* **Premium UI/UX:** Features a sleek glassmorphism design system, complete with seamless Dark Mode toggling and animated backgrounds.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+* **Frontend:** React.js, Vite
+* **Backend & Database:** Supabase (PostgreSQL, Auth)
+* **Mobile Wrapper:** Capacitor, Android Studio
+* **Deployment:** Vercel (Web), Google Play Console (Mobile - *Coming Soon*)
+
+---
+
+## 💻 Getting Started (Local Development)
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+* Node.js installed on your machine
+* Android Studio (if building the mobile APK)
+
+### Installation
+1. Clone the repository
+   ```sh
+   git clone [https://github.com/sagnic05/campus-companion.git](https://github.com/sagnic05/campus-companion.git)
